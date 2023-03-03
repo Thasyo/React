@@ -1,0 +1,41 @@
+Seção 02 - FUNDAMENTOS DO REACT
+
+    - CRIANDO COMPONENTES
+
+        -> Na maioria dos projetos, os componentes ficam em uma pasta chamada de "components", que devemos criar;
+        -> Geralmente, são criados com a Camel Case: "FirstComponent.js";
+        -> Neste arquivo, criamos uma função, que contém o código deste componente (lógica e o template);
+        -> Também, devemos exportar essa função, a fim de reutilizá-la;
+    
+    - IMPORTANDO COMPONENTES
+
+        -> A importação é a maneira que temos de reutilizar o componente;
+        -> Utilizamos a sintaxe: import <NOME_COMPONENTE> from './componentes/<NOME_COMPONENTE>';
+        -> Para colocar o componente importado em outro componente, precisamos colocá-lo em forma de tag: <FirstComponent/>;
+        -> E então finalizamos o ciclo de importação;
+
+    - JSX
+
+        -> JSX é o HTML do React;
+        -> Onde vamos declarar as tags de HTML que serão exibidas no navegador;
+        -> Ficam no Return do componente;
+        -> Temos algumas diferenças do HTML, por exemplo: class será "className";
+        -> Isso se dá pelas instruções semelhantes de JS e HTML, pois o JSX é JavaScript, então algumas terão nomes diferentes;
+        -> O JSX pode ter apenas UM elemento pai;
+
+    - COMENTÁRIOS
+
+        -> Os comentários, são colocados de duas maneiras:
+        -> 1: Na parte da função, onde é executada a lógica, a sintaxe é: //algum comentário
+        -> 2: No JSX: {/*algum comentário*/};
+        -> Os comentários não aparecem no console do projeto;
+    
+    - TEMPLATE EXPRESSIONS
+
+        -> É o recurso que nos permite executar JS no JSX e também interpolar variáveis;
+        -> Isso será muito útil ao longo dos seus projetos em React;
+        -> A sintaxe é: {algumCódigoEmJS};
+        -> Tudo que está entre chaves é processado em JavaScript e nos retorna um resultado;
+
+
+
