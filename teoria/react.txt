@@ -38,4 +38,37 @@ Seção 02 - FUNDAMENTOS DO REACT
         -> Tudo que está entre chaves é processado em JavaScript e nos retorna um resultado;
 
 
+    - HIERARQUIA DE COMPONENTES
+
+        -> Os componentes que criamos, podem ser reutilizados em vários componentes;
+        -> E ainda componentes podem formar uma hierarquia, sendo importados uns dentro dos outros, como fizemos no "App.js";
+
+    - EVENTO DE CLICK
+
+        -> Os eventos para o front-end são essenciais;
+        -> Em várias situações, vamos precisar do click, cmo ao enviar formulários;
+        -> No react, os eventos já estão "prontos", podemos utilizar o 'onClick' para ativar uma função ao clicar em um elemento;
+        -> Esta função é criada na própria função do componente;
+        -> As funções, geralmente, tem o padrão "handleAlgumaCoisa";
+
+    - FUNÇÕES NO EVENTO
+
+        -> Quando as funções são simples, podemos realizar a lógica no próprio evento;
+        -> Isso torna nosso código mais "complicado", por atrelar lógica com HTML;
+        -> Mas em algumas situações, é aplicável;
+
+    - FUNÇÕES DE RENDERIZAÇÃO
+
+        -> Podemos criar funções que retornam JSX;
+        -> Isso serve para criasr situações que dependam de outras condições;
+        -> Ou seja, o JSX a ser renderizado pode variar por alguma variável, por exemplo;
+
+    
+
+
+
+
+
+
+
 

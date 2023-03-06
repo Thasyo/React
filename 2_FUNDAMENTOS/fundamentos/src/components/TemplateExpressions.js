@@ -11,7 +11,7 @@ const TemplateExpressions = () => {
         <div>
             <h2>Olá {name}!</h2>
             <h4>Sua idade é: {data.age}</h4>
-            <h4>Profissaão: {data.job}</h4>
+            <h4>Profissão: {data.job}</h4>
         </div>
 
     )
