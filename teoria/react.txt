@@ -63,6 +63,17 @@ Seção 02 - FUNDAMENTOS DO REACT
         -> Isso serve para criasr situações que dependam de outras condições;
         -> Ou seja, o JSX a ser renderizado pode variar por alguma variável, por exemplo;
 
+Seção 03 - AVANÇANDO EM REACT
+
+    - IMAGENS NO REACT
+
+        -> As imagens públicas do nosso projeto podem ficar na pasta "public";
+        -> De lá, elas podem ser chamadas pelas tags 'img' diretamente pelo '/nome.jpg';
+        -> Pois a pasta 'public' fica linkada com o src das imagens;
+
+    - IMAGENS EM UMA PASTA ESPECÍFICA
+
+        -> A pasta 'public'
     
 
 
