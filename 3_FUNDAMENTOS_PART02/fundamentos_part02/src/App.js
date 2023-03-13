@@ -1,6 +1,9 @@
 import './App.css';
 import TitleSection03 from './components/TitleSectionThree,';
-import OnePiece from './imgs/wallpaper-hp-one-piece.jpg'
+import OnePiece from './imgs/wallpaper-hp-one-piece.jpg';
+import ManageData from './components/ManageData';
+import ListRender from './components/ListRender';
+import ConditionalRender from './components/ConditionalRender';
 
 function App() {
   return (
@@ -14,6 +17,12 @@ function App() {
       {/* IMAGEM EM UMA PASTA ESPECÍFICA */}
       <div>
         <img src={OnePiece} alt="One Piece" width="500px"/>
+      </div>
+
+      <div>
+        <ManageData/>
+        <ListRender/>
+        <ConditionalRender/>
       </div>
     </div>
   );

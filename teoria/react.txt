@@ -73,8 +73,56 @@ Seção 03 - AVANÇANDO EM REACT
 
     - IMAGENS EM UMA PASTA ESPECÍFICA
 
-        -> A pasta 'public'
+        -> A pasta 'public' pode ser utilizada para colocar imagens, como fizemos anteriormente;
+        -> Mas um padrão bem utilizado para as imagens dos projetos, é colocar em uma pasta chamadas 'assets', em 'src';
+        -> Ou seja, você vai encontrar projetos com as duas abordagens;
+        -> Em 'assets', precisamos importar as imagens, e o 'src' é dinâmico com o nome da importação; 
     
+    - O QUE SÃO HOOKS?
+
+        -> Recursos do React que tem diversas funções;
+        -> Como: guardar e alterar o estado de algum dado na nossa aplicação;
+        -> Todos os hooks começam com o 'use', por exemplo: useState;
+        -> Podemos criar nossos próprios hooks, isso é chamado de 'custom hook';
+        -> Os hooks precisam ser importados;
+        -> Geralmente, são úteis em todas as aplicações, utilizaremos diversos ao longo do curso;
+
+    - USESTATE HOOK
+
+        -> Utilizamos para gerenciar o estado de algum dado, variáveis não funcionam corretamente, o componente não re-renderiza;
+        -> Para guardar o dado, definimos o nome da variável e para alterar, vamos utilizar o 'setNome', onde nome é o nome do nosso dado;
+
+    - RENDERIZAÇÃO DE LISTA
+
+        -> Uma outra ação bem comum, é renderizar listas de dados no template;
+        -> Fazemops isso com os dados com tipo de array;
+        -> UtilizandO O MÉTODO 'MAP' para nos auxiliar;
+        -> Além dos dados, podemos inserir JSX em cada iteração;
+
+
+    - A PROPRIEDADE 'KEY'
+
+        -> Iterar listas sem a propriedade key, nos gera um "warning", podemos verificar isso no console;
+        -> O react precisa de uma chave única em cada um dos itens listado;
+        -> Isso serve para ajudá-lo na renderização do componente;
+        -> Geralmente, teremos um array de objetos e podemos colocar 'key' como alguma chave única, como o id de algum dado;
+        -> Em último caso, devemos utilizar o index do método map;
+
+    - PREVIOUS STATE
+
+        -> É um recurso que nos permite pegar o dado em seu valor original dentro de um set de dado;
+        -> Isso é muito utilizado para modificar listas, pois temos o valor antigo e transformamos em um valor novo;
+        -> O primeiro argumento de um set sempre será o "previous state";
+
+    - RENDERIZAÇÃO CONDICIONAL
+
+        -> É quando imprimimos uma parte do template baseado em uma condição;
+        -> Isso é interessante em situações como: usuário autenticado/não autenticado;
+    
+    - IF E ELSE NO JSX
+
+        -> Aqui, utilizamos o if ternário;
+        -> sintaxe: <condição> ? <bloco 01> : <bloco 02>;
 
 
 
