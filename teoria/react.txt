@@ -124,7 +124,36 @@ Seção 03 - AVANÇANDO EM REACT
         -> Aqui, utilizamos o if ternário;
         -> sintaxe: <condição> ? <bloco 01> : <bloco 02>;
 
+    - PROPS
 
+        -> É outro recurso fundamental do React;
+        -> Nos permite passar valores de um componente pai para um componente filho;
+        -> Isso será muito útil quando forem carregados via bancos de dados, por exemplo;
+        -> As Props vem um objeto no argumentp da função do componente;
+
+    - DESESTRUTURANDO PROPS
+
+        -> É super comum passar mais de uma props em um componente;
+        -> Pra facilitar isso, o React nos permite desestruturar as propriedades que chegam, com o recurso de "destructuring";
+        -> Se temos duas props: name e age;
+        -> Podemos fazer da seguinte forma usando o desestructuring: "MyComponent({name, age})";
+        -> Agora não precisamos sempre colocar: "props.AlgumaCoisa";
+
+    - REUTILIZAÇÃO DE COMPONENTES
+
+        -> Com props, a reutilização de componentes começa a fazer muito sentido;
+        -> Se temos os dados de 1000 carros por exemplo, podemos reaproveitar o nosso CarDetails 1000 vezes;
+        -> Isso torna nosso código mais padronizado, facilitando a manutenção;
+    
+    - RENDERIZAÇÃO COM LOOP
+
+        -> Os arrays de dados podem ter muitos itens também;
+        -> Então o correto é utilizar uma estrutura de loop (map) para a sua exibição;
+        -> E com isso conseguimos conciliar os três conceitos: renderização de listas, reaproveitamento de componentes e props;
+     
+     - FRAGMENTOS
+
+        -> 
 
 
 
