@@ -7,6 +7,12 @@ import ConditionalRender from './components/ConditionalRender';
 import ShowUserName from './components/ShowUserName';
 import { useState } from 'react';
 import CarDetails from './components/CarDetails';
+import Fragments from './components/Fragments';
+import Container from './components/Container';
+import ExecuteFunction from './components/ExecuteFunction';
+import Message from './components/Message';
+import ChangeMessageState from './components/ChangeMessageState';
+import UserDetails from './components/UserDetails';
 
 function App() {
 
@@ -20,6 +26,24 @@ function App() {
     {id: 3, name: "FERRARI", color: "VERMELHA", km: 347632, newCar: false},
     {id: 4, name: "GOL", color: "VERDE", km: 0, newCar: true},
     {id: 5, name: "PULSE", color: "AMARELO", km: 98273, newCar: false},
+  ];
+
+  const showMessage = () => {
+    console.log("Executando função do elemento Pai como uma prop!");
+  }
+
+  const [message, setMessage] = useState("")
+
+  const handleMessage = (msg) => {
+    setMessage(msg)
+  }
+
+  /* DESAFIO 04 */
+  const people = [
+    {id: 1, name: "Luana", age: 20, job: "Estudante"},
+    {id: 2, name: "Thasyo", age: 20, job: "Recepcionista"},
+    {id: 3, name: "Jennyfer", age: 22, job: "Professora"},
+    {id: 4, name: "Cássio", age: 15, job: "Estudante"},
   ];
 
   return (
@@ -49,14 +73,34 @@ function App() {
         {/* RENDERIZAÇÃO COM LOOP */}
         {cars.map((car) => (
           <CarDetails 
+            key={car.id}
             brand={car.name}
             color={car.color}
             km={car.km}
             newCar={car.newCar}
           />
         ))}
-      
-      
+        {/* FRAGMENTS */}
+        <Fragments propsFragment="Teste"/>
+        {/* CHILDREN PROP */}
+        <Container myValue="Testando prop dentro do children prop">
+          <p>Este é o Children Prop</p>
+        </Container>
+        {/* FUNÇÕES COM PROPS */}
+        <ExecuteFunction message={showMessage}/>
+        {/* STATE LIFT */}
+        <Message msg={message}/>
+        <ChangeMessageState handleMessage={handleMessage}/>
+        {/* DESAFIO 04 */}
+        <h2>DESAFIO 04</h2>
+        {people.map((user) => (
+          <UserDetails 
+            key={user.id}
+            name={user.name}
+            age={user.age}
+            job={user.job}
+          />
+        ))}
       </div>
     </div>
   );

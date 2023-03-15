@@ -153,9 +153,29 @@ Seção 03 - AVANÇANDO EM REACT
      
      - FRAGMENTOS
 
-        -> 
+        -> Os React Fragments são interessantes para quando precisamos ter mais de um elemento pai em um componente;
+        -> Criamos uma tag vazia: <> ... </>;
+        -> E ela serve como elemento pai, não alterando a estrutura do html com uma div, por exemplo;
+    
+    - CHILDREN PROP
+    
+        -> É um recurso utilizado para quando um componente precisa ter JSX dentro dele;
+        -> Porém, este JSX vem do componente PAI;
+        -> Então, o componente age como um "container", abraçando estes elementos;
+        -> É children é considerada uma prop do componente;
 
+    - FUNÇÕES EM PROPS
 
+        -> As funções podem ser passadas para as props normalmente;
+        -> Basta criar a função no componente pai e enviar como prop para o componente;
+        -> No componente filho, ela pode ser ativada por um evento, por exemplo;
+
+    - ELEVAÇÃO DE ESTADO (STATE LIFT)
+
+        -> É quando um valor é elevado do componente filho para o componente pai;
+        -> Geralmente, temos um componente que usa o state e outro que o altera;
+        -> Então precisamos passar a alteração para o componente pai, e este passa para o componente que usa o state;
+    
 
 
 
