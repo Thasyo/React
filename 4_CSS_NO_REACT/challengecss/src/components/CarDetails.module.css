@@ -1,0 +1,13 @@
+.list_car{
+    list-style: none;
+    background-color: rgb(210, 186, 218);
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.list_item{
+    color: #7a487a;
+    text-shadow: 0px 1px 10px #ffffff;
+    font-size: 20px;
+    padding: 5px;
+}

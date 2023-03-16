@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 500px;
+}
+
+h1{
+  color: red;
+}
+
+.pink-title {
+  color: magenta;
+  background-color: pink;
+  padding: 15px;
+  border: 1.5px solid red;
+}
+
+.black-title {
+  color: gray;
+  background-color: #1b1919;
+  padding: 15px;
+  border: 1.5px solid #7b7373;
+}
+
