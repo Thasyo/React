@@ -216,5 +216,62 @@ SEÇÃO 04 - CSS NO REACT
         -> Ele vai ser exclusivo do componente em questão;
         -> O nome do arquivo é: <nome_componente>.modules.css;
         -> Precisamos importá-lo também no componente;
+    
 
+SEÇÃO 05 - FORMULÁRIOS EM REACT
 
+    - FORMULÁRIOS E REACT
+    
+        -> Utilizamos a tag <Form> para formulários;
+        -> As labs dos inputs contém o atributo "htmlFor", que deve ter o valor do name do input;
+        -> Não utilizamos 'action', pois o processamento será feito de forma assíncrona;
+    
+    - LABEL ENVOLVENDO INPUT
+
+        -> Em React, um padrão comum é a tag label envolvendo o input;
+        -> Isso faz com que o atributo for se torne opcional;
+        -> Simplificando nossa estrutura HTML, sem perder a semântica;
+
+    - MANIPULANDO VALORES
+
+        -> Para manipular os valores dos inputs, vamos utilizar o hook "useState";
+        -> Podemos armazenar na variável e utilizar o set para alterar o valor;
+        -> Vamos criar uma função para alterar o valor no evento "onChange";
+        -> Deixando nosso código fácil de trabalhar nas próximas etapas: como no envio dos dados para BD e validação;
+
+    - SIMPLIFICANDO A MANIPULAÇÃO DOS VALORES
+
+        -> Quando temos vários inputs, podemos realizar a manipulação de forma mais simples;
+        -> Basicamente, criamos uma função inline dentro do onChange de cada input, colocando o set<Nome_state>;
+        -> Ela vai alterar o valor do state com o método set, da mesma forma que a função isolada;
+
+    - ENVIO DO FORMULÁRIO
+
+        -> Para enviar um form, vamos utilizar o evento "onSubmit";
+        -> Ele chamará uma função, e nesta, devemos lembrar de parar a submissão com o "preventDefault";
+        -> Nesta etapa, podemos realizar validações, envio de form para o servidor, reset de form e outras ações;
+    
+    - CONTROLLED INPUTS
+
+        -> É um recurso que nos permite mais flexibilidade nos forms de React;
+        -> Precisamos apenas igualar o valor ao state;
+        -> Um uso muito comum: formulários de eedição, que os dados já vem do backend;
+    
+    - RESETANDO FORMULÁRIOS
+
+        -> Com o controller inputs, limpar forms será mais fácil;
+        -> Basta atribuir um valor de uma string vazia aos states e pronto;
+        -> Isso será feito após o envio, em forms que o usuário orecisa preencher novamente;
+    
+    - INPUT DE TEXTAREA
+
+        -> O TEXTAREA pode ser considerado um input de text normal;
+        -> Utilizaremos o value para alterar o state incial;
+        -> E o evento onChange, para modificar o valor do state;
+
+    - INPUT DE SELECT
+
+        -> O select será muito semelhante aos outros inputs;
+        -> Quando temos a alteração de um valr o evento onChange pode captar isso;
+        -> O value também pode atribuir qual "option" estará selecionada;
+    
