@@ -1,10 +1,10 @@
 import './HomePage.css';
 
-const HomePage = () => {
+const HomePage = ({startGame}) => {
   return (
     <div className='home'>
         <h1>Secret Word</h1>
-        <button>Iniciar</button>
+        <button onClick={startGame}>Iniciar</button>
     </div>
   )
 }
