@@ -1,0 +1,49 @@
+.score h2, .title-start-game h1{
+    text-shadow: 0px 1px 8px #ffffff9c;
+}
+
+.title-start-game h3{
+    text-shadow: 0px 1px 8px #ffffff9c;
+}
+
+.title-start-game h3 span{
+    color: #c722dd;
+    text-shadow: 0px 1px 8px #ffffff58;
+    font-weight: 800;
+}
+
+.words-container{
+    margin: 1.5em;
+    padding: 1.5em;
+    border: 10px solid #c722dd;
+    border-radius: 5px;
+    display: flex;
+}
+
+.letter, .blank-square{
+    font-size: 4.5em;
+    line-height: 1.5;
+    border: 2px solid #c722dd;
+    height: 100px;
+    width: 100px;
+    text-transform: uppercase;
+    background-color: aliceblue;
+    color: #000000;
+    font-weight: bold;
+}
+
+.letter-container p{
+    margin-bottom: 1.2em;
+    font-weight: bold;
+}
+
+.letter-container form input{
+    height: 30px;
+    width: 30px;
+    font-size: 1.5em;
+    text-align: center;
+    margin-right: 20px;
+    text-transform: lowercase;
+}
+
+

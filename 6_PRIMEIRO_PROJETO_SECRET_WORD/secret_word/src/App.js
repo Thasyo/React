@@ -27,7 +27,7 @@ function App() {
 
   const [pickedWord, setPickedWord] = useState("");
   const [pickedCategory, setPickedCategory] = useState("");
-  const [letters, setPickedLetters] = useState([]);
+  const [letters, setLetters] = useState([]);
 
   //função para escolher palavra e categoria.
   const pickedWordAndCategory = () => {
@@ -52,6 +52,11 @@ function App() {
     let wordLetters = word.split("");
     wordLetters = wordLetters.map((lt) => lt.toLowerCase());
     console.log(wordLetters);
+
+    //fill states.
+    setPickedWord(word);
+    setPickedCategory(category);
+    setLetters(letters);
 
     setGameStage(stages[1].name);
   }
