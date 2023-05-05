@@ -275,3 +275,27 @@ SEÇÃO 05 - FORMULÁRIOS EM REACT
         -> Quando temos a alteração de um valr o evento onChange pode captar isso;
         -> O value também pode atribuir qual "option" estará selecionada;
     
+SEÇÃO 07 - REQUISIÇÕES HTTP
+
+    - JSON SERVER
+
+        -> É um pacote NPM;
+        -> Ele simula uma API, e isso nos possibilita fazer requisições HTTP;
+        -> Vamos aprender a integrar este recurso com o react;
+        -> Podemos entender isso como uma etapa de preparação para APIs reais;
+        -> Ou seja, atingir o mesmo resultado mas sem precisar de uma estrutura no back-end;
+
+    - A IMPORTÂNCIA DO UseEFFECT
+
+        -> O UseEffect faz com que determinada ação seja executada apenas uma vez;
+        -> Isso é interessante pois os componentes estão sempre se re-renderizando, então precisamos ter ações únicas às vezes;
+        -> O UseEffect ainda possui um array de dependências, que deve conter os dados que ativem a execução da função de forma automática;
+        -> O UseEffect estará presente sempre nas requisições assíncronas;
+    
+    - RESGATANDO DADOS COM REACT
+
+        -> Para trazer os dados, vamos ter que utilizar vários Recursos;
+        -> primeiro: Ter um local para salvar (useState);
+        -> Depois, renderizar a chamada a API apenas uma vez (UseEffect);
+        -> Depois, um meio de fazer a requisição assíncrona (Fetch API);
+         
