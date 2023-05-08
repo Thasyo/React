@@ -298,4 +298,9 @@ SEÇÃO 07 - REQUISIÇÕES HTTP
         -> primeiro: Ter um local para salvar (useState);
         -> Depois, renderizar a chamada a API apenas uma vez (UseEffect);
         -> Depois, um meio de fazer a requisição assíncrona (Fetch API);
-         
+
+    - ADICIONANDO DADOS
+
+        -> Para adicionar um item, vamos precisar resgatar os dados do form, com o useState;
+        -> Reunir eles em uma função após o submit e enviar um request de POST para a nossa API;
+        -> O processo é parecido com o de resgate de dados, mas agora estamos enviando dados;

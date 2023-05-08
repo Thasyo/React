@@ -1,19 +1,19 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Camisa",
-            "price": 59.9
-        },
-        {
-            "id": 2,
-            "name": "Calça",
-            "price": 89.9
-        },
-        {
-            "id": 3,
-            "name": "Sapato",
-            "price": 159.9
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": 2,
+      "name": "Calça",
+      "price": 89.9
+    },
+    {
+      "id": 3,
+      "name": "Sapato",
+      "price": 159.9
+    }
+  ]
 }
