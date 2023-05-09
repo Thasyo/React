@@ -14,6 +14,36 @@
       "id": 3,
       "name": "Sapato",
       "price": 159.9
+    },
+    {
+      "name": "leite",
+      "price": "4.99",
+      "id": 4
+    },
+    {
+      "name": "Casaco",
+      "price": "79.99",
+      "id": 5
+    },
+    {
+      "name": "Garrafa 51",
+      "price": "12",
+      "id": 6
+    },
+    {
+      "name": "Tênis",
+      "price": "199.99",
+      "id": 7
+    },
+    {
+      "name": "Jaca",
+      "price": "5.00",
+      "id": 8
+    },
+    {
+      "name": "Melância",
+      "price": "12.00",
+      "id": 9
     }
   ]
 }
