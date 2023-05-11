@@ -310,3 +310,11 @@ SEÇÃO 07 - REQUISIÇÕES HTTP
         -> Se a requisição foi feita com sucesso, podemos adicionar o item a list após o request;
         -> Isso torna nossa aplicação mais performática;
         -> Utilizaremos o set do useState para isso;
+
+    - CUSTOM HOOK PARA O FETCH
+
+        -> É normal dividir funções que podem ser reaproveitadas em hooks;  
+        -> Esta técnica é chamada de  custom hook, e vamos criar um para o resgate de dados;
+        -> Os hooks geralmente ficam na pasta "hooks";
+        -> Devemos utilizar o padrão useName;
+        -> Basicamente criamos uma função e exportamos ela;
