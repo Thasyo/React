@@ -49,6 +49,11 @@
       "name": "Nescau",
       "price": "8.99",
       "id": 10
+    },
+    {
+      "name": "mouse",
+      "price": "60.00",
+      "id": 11
     }
   ]
 }
