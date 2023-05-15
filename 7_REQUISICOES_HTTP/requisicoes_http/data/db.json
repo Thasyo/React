@@ -54,6 +54,31 @@
       "name": "mouse",
       "price": "60.00",
       "id": 11
+    },
+    {
+      "name": "Manga Rosa",
+      "price": "5.00",
+      "id": 12
+    },
+    {
+      "name": "Manga Espada",
+      "price": "3.99",
+      "id": 13
+    },
+    {
+      "name": "Laranja Cravo",
+      "price": "2.99",
+      "id": 14
+    },
+    {
+      "name": "Melância",
+      "price": "10.99",
+      "id": 15
+    },
+    {
+      "name": "Uva",
+      "price": "1.99",
+      "id": 16
     }
   ]
 }

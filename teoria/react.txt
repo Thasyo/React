@@ -326,3 +326,14 @@ SEÇÃO 07 - REQUISIÇÕES HTTP
         -> Após ela ocorrer executamos a adição do produto;
         -> OBS: nem sempre reutilizar um hook é a melhor estratégia;
         
+    - ESTADO DE LOADING
+
+        -> Quando fizermos requsiições para Apis é normal que haja um intervalo de loading entre a requisição e o recebimento da resposta;
+        -> Podemos fazer isso no nosso hook também;
+        -> Identificar quando começa e termina este estado;
+
+    - LOADING NO POST
+
+        -> Podemos bloquear ações indevidas em outras requests também, como no POST;
+        -> Uma ação interessante é remover a ação de adicionar outro item enquanto o request ainda não realizou;
+        

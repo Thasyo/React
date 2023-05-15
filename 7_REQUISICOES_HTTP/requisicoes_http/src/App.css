@@ -27,7 +27,7 @@ label input{
 #btn{
   border: none;
   border-radius: 10px;
-  background-color: rgb(227, 8, 227);
+  background-color: #e308e3;
   color: white;
   font-size: 15px;
   font-weight: 700;
@@ -39,6 +39,18 @@ label input{
 #btn:hover{
   box-shadow: 1px 1px 5px gray;
   transition: 0.3s;
+}
+
+#btn-disabled{
+  border: none;
+  border-radius: 10px;
+  background-color: #a405a4;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 5px;
+  width: 15%;
+  cursor: pointer;
 }
 
 
