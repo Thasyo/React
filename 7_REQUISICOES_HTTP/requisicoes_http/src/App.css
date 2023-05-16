@@ -53,4 +53,23 @@ label input{
   cursor: pointer;
 }
 
+#btn-delete{
+  margin: 5px 2px;
+  border: none;
+  background-color: #e308e3;
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  width: 15%;
+  text-align: center;
+}
+
+#btn-delete:hover{
+
+  box-shadow: 1px 1px 5px gray;
+  transition: 0.3s;
+  cursor: pointer;
+
+}
+
 

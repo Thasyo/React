@@ -12,6 +12,12 @@ export const useFetch = (url) => {
     //ESTADO DE LOADING
     const [loading, setLoading] = useState(false);
 
+    //TRATAMENTO DE ERROS
+    const [error, setError] = useState(null);
+
+    //Variável para o id do produto que será removido
+    const [itemId, setItemId] = useState(null);
+
     const httpConfig = (data, method) => {
         if(method === "POST"){
             setConfig({
@@ -23,6 +29,17 @@ export const useFetch = (url) => {
             });
 
             setMethod(method);
+        }else if(method === "DELETE") {  //REMOVENDO DADOS
+            setConfig({
+                method,
+                headers: {
+                    "Content-Type": "Application/json"
+                },
+                body: JSON.stringify(data)
+            });
+
+            setMethod(method);
+            setItemId(data);
         }
     };
 
@@ -32,11 +49,19 @@ export const useFetch = (url) => {
 
             setLoading(true);
 
-            const res = await fetch(url);
+            try {
 
-            const json = await res.json();
+                const res = await fetch(url);
 
-            setData(json);
+                const json = await res.json();
+
+                setData(json);
+                
+            } catch (error) {
+
+                setError("Houve algum erro no carregameno de dados!");
+                
+            }
 
             setLoading(false);
 
@@ -51,20 +76,30 @@ export const useFetch = (url) => {
         
         const httpRequest = async () => {
 
+            let json;
+
             if(method === "POST"){
                 let fetchOptions = [url, config];
 
                 const res = await fetch(...fetchOptions);
 
-                const json = res.json();
+                json = await res.json();
+                
+            }else if(method === "DELETE"){
+                
+                const deleteUrl = `${url}/${itemId}`; 
 
-                setCallFetch(json);
+                const res = await fetch(deleteUrl, config);
+
+                json = await res.json();
             };
+
+            setCallFetch(json);
         };
 
         httpRequest();
     }, [config, method, url])
 
-    return {data, httpConfig, loading};
+    return {data, httpConfig, loading, error};
 
 }

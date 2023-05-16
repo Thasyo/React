@@ -336,4 +336,11 @@ SEÇÃO 07 - REQUISIÇÕES HTTP
 
         -> Podemos bloquear ações indevidas em outras requests também, como no POST;
         -> Uma ação interessante é remover a ação de adicionar outro item enquanto o request ainda não realizou;
-        
+
+    - TRATAMENTO DE ERROS
+
+        -> Podemos tratar os erros das requisições por meio de um "Try | Catch";
+        -> Além de pega os dados do erro, podemos alterar um state para imprimir um elemento se algo der errado;
+        -> Desta maneira, conseguimos prever vários cenários (dados resgatados, Carregamento e erro);
+
+    

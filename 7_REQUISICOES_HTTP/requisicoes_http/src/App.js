@@ -9,7 +9,7 @@ function App() {
 
   const [products, setProducts] = useState([]);
 
-  const {data: items, httpConfig, loading} = useFetch(url);
+  const {data: items, httpConfig, loading, error} = useFetch(url);
 
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
@@ -57,17 +57,17 @@ function App() {
     addNewProduct.current.focus();
   }
 
+  //REMOVENDO DADOS
+  const handleDelete = (id) => {
+    console.log(id);
+
+    httpConfig(id, "DELETE");
+
+  };
+
   return (
     <div className="App">
       <h1>Lista de produtos</h1>
-      {loading && <p>Carregando dados...</p>}
-      {!loading && <ul>
-        {items && items.map((product) => (
-          <li key={product.id}>
-            {product.name} - R$ {product.price}
-          </li>
-        ))}
-      </ul>}
       <form onSubmit={handleSubmit}>
         <label>
           Nome
@@ -82,6 +82,16 @@ function App() {
         {loading && <input type="submit" disabled value="Aguarde" id='btn-disabled'/>}
         {!loading && <input type="submit" value="Criar" id="btn"/>}
       </form>
+
+      {loading && <p>Carregando dados...</p>}
+      {error && <p>{error}</p>}
+      {!error && <ul>
+        {items && items.map((product) => (
+          <li key={product.id}>
+            {product.name} - R$ {product.price} <button onClick={() => handleDelete(product.id)} id='btn-delete'>Remover</button>
+          </li>
+        ))}
+      </ul>}
     </div>
   );
 }
