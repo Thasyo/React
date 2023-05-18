@@ -344,3 +344,13 @@ SEÇÃO 07 - REQUISIÇÕES HTTP
         -> Desta maneira, conseguimos prever vários cenários (dados resgatados, Carregamento e erro);
 
     
+SEÇÃO 08 - REACT ROUTER
+
+    - O QUE É REACT ROUTER?
+
+        -> É um dos pacotes mais utilizados para criar uma estrutura de rotas em aplicações de React;
+        -> Permite que nossas SPAs tenham múltiplas páginas;
+        -> Precisamos instalar no nosso projeto;
+        -> A configuração e utilização é simples;
+        -> Também temos outras funções, como: Redirect, Nested Routes, Not Found Routes e outros;
+    
