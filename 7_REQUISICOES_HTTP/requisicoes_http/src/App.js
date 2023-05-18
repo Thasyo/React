@@ -59,7 +59,6 @@ function App() {
 
   //REMOVENDO DADOS
   const handleDelete = (id) => {
-    console.log(id);
 
     httpConfig(id, "DELETE");
 

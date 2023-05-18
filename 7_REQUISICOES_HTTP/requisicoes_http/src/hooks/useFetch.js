@@ -34,8 +34,7 @@ export const useFetch = (url) => {
                 method,
                 headers: {
                     "Content-Type": "Application/json"
-                },
-                body: JSON.stringify(data)
+                }
             });
 
             setMethod(method);
