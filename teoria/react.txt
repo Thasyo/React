@@ -354,3 +354,11 @@ SEÇÃO 08 - REACT ROUTER
         -> A configuração e utilização é simples;
         -> Também temos outras funções, como: Redirect, Nested Routes, Not Found Routes e outros;
     
+    - CONFIGURANDO O REACT ROUTER
+
+        -> Para configurar o React Router, vamos ter que importar três elementos de react-router-dom;
+        -> BroswerRouter: Define onde a área do nosso app vai trocar qas páginas;
+        -> Routes: Define as rotas;
+        -> Route: Um elemento deste para cada rota, configurar com Path e componente da rota;
+
+    
