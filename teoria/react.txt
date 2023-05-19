@@ -361,4 +361,7 @@ SEÇÃO 08 - REACT ROUTER
         -> Routes: Define as rotas;
         -> Route: Um elemento deste para cada rota, configurar com Path e componente da rota;
 
-    
+    - ADICIONANDO LINKS
+
+        -> Para criar links para as páginas, vamos precisar utilizar o Link do React Router;
+        -> No link, configuramos o parâmetro "to", que recebe a URL/Path que será redirecionado quem clicar no link;
