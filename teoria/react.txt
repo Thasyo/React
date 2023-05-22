@@ -365,3 +365,10 @@ SEÇÃO 08 - REACT ROUTER
 
         -> Para criar links para as páginas, vamos precisar utilizar o Link do React Router;
         -> No link, configuramos o parâmetro "to", que recebe a URL/Path que será redirecionado quem clicar no link;
+
+    - CARREGAMENTO DE DADOS
+
+        -> Vamos exercitar novamente o carregamento de dados com o nosso hook useFetch;
+        -> Depois, poderemos utilizá-los para o carregamento de dados individuais;
+        -> Utilizaremos o hook igual ao da última seção, e vamos imprimir os produtos na Home da mesma forma;
+        
