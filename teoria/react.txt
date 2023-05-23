@@ -372,3 +372,9 @@ SEÇÃO 08 - REACT ROUTER
         -> Depois, poderemos utilizá-los para o carregamento de dados individuais;
         -> Utilizaremos o hook igual ao da última seção, e vamos imprimir os produtos na Home da mesma forma;
         
+    - ROTAS DINÂMICAS
+
+        -> Para criar uma rota dinâmica, vamos precisar definir uma nova Route em App.js;
+        -> Que deve ter padrão de: "/products/:id";
+        -> Onde o ":id" é o dado dinâmico, podendo ter qualquer valor;
+        -> Na página, podemos utilizar o hook "useParams" para resgatar esta informação;
