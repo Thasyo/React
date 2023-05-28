@@ -378,3 +378,10 @@ SEÇÃO 08 - REACT ROUTER
         -> Que deve ter padrão de: "/products/:id";
         -> Onde o ":id" é o dado dinâmico, podendo ter qualquer valor;
         -> Na página, podemos utilizar o hook "useParams" para resgatar esta informação;
+
+    - CARREGAMENTO INDIVIDUAL
+
+        -> Vamos utilizar o id recebido, para formar a nova URL;
+        -> E por fim, podemos utilizar o useFetch para trazer o item;
+        -> Por fim, faremos a validação e impressão do mesmo no JSX;
+    
