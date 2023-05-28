@@ -385,3 +385,8 @@ SEÇÃO 08 - REACT ROUTER
         -> E por fim, podemos utilizar o useFetch para trazer o item;
         -> Por fim, faremos a validação e impressão do mesmo no JSX;
     
+    - NESTED ROUTE
+
+        -> As nested routes indicam URLs mais complexas, como: /products/:id:something;
+        -> Neste caso, vamos precisar criar um componente que corresponda com o padrão indicado e também a URL em App.js;
+        -> Na Nested Route, teremos o acesso ao parâmetro da URL também;
