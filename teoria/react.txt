@@ -390,3 +390,17 @@ SEÇÃO 08 - REACT ROUTER
         -> As nested routes indicam URLs mais complexas, como: /products/:id:something;
         -> Neste caso, vamos precisar criar um componente que corresponda com o padrão indicado e também a URL em App.js;
         -> Na Nested Route, teremos o acesso ao parâmetro da URL também;
+
+    - ERRO 404
+
+        -> Podemos criar uma página 404 facilmente com o React Router;
+        -> Basta criarmos o componente da página;
+        -> E no arquivo "App.js", definir uma path como *;
+        -> Desta maneira, qualquer rota que não exista, cairá neste componente;
+
+    - LINK ATIVO
+
+        -> Para ter fácil acesso a uma modificação para os links ativos, vamos trocar o Link pelo NavLink;
+        -> Neste elemento, temos acesso a um valor chamado isActive;
+        -> Ou seja, podemos ativar uma classe se a rota atual for a que está no atributo "to";
+        
