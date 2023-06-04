@@ -404,3 +404,8 @@ SEÇÃO 08 - REACT ROUTER
         -> Neste elemento, temos acesso a um valor chamado isActive;
         -> Ou seja, podemos ativar uma classe se a rota atual for a que está no atributo "to";
         
+    - SEARCH PARAMS
+
+        -> Search Params é um recurso que permite obter o que vem na URL em forma de parâmetro, ex: produtos?q=camisa;
+        -> Utilizamos o hook useSearchParams para obtê-los;
+        -> Com este recurso fica mais simples fazer uma funcionalidade de busca no sistema; 
