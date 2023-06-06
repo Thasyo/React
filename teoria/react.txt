@@ -409,3 +409,28 @@ SEÇÃO 08 - REACT ROUTER
         -> Search Params é um recurso que permite obter o que vem na URL em forma de parâmetro, ex: produtos?q=camisa;
         -> Utilizamos o hook useSearchParams para obtê-los;
         -> Com este recurso fica mais simples fazer uma funcionalidade de busca no sistema; 
+
+
+SEÇÃO 09 - CONTEXT API
+
+    - O QUE É CONTEXT API?
+
+        -> É um recurso que facilita o compartilhamento de um estado entre componentes;
+        -> Ou seja, quando precisamos de dados 'globais', provavelmente precisamos utilizar o Context;
+        -> O Context precisa encapsular os componentes que receberão seus valores, geralmente colocamos no App.js ou Index.js, os contextos geralmente ficam na pasta 'context';
+
+    - CRIANDO O CONTEXTO
+
+        -> Primeiramente, vamos ter que criar o Context;
+        -> O arquivo deve sempre ter a primeira letra maiuscula no nome, e geralmente termina em Context. ex: AlgumaCoisaContext.js;
+        -> A convenção é deixar na pasta context em src;
+        -> Vamos utilizar o valor do contexto, o arquivo precisa ser importado;
+
+    - CRIANDO O PROVIDER
+
+        -> O PROVIDER vai delimitar onde o contexto é utilizado;
+        -> Vamos criar uma espécie de componente com a prop Children;
+        -> E este Provider deve encapsular os demais componentes em que precisamos consultar ou alterar o valor;
+        -> Geralmente fica no APP.JS ou INDEX.JS;
+        -> Agora, poderemos compartilhar o valor do contexto em todos os componentes;
+    
