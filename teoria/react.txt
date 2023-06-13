@@ -453,3 +453,9 @@ SEÇÃO 09 - CONTEXT API
         -> No Reducer, teremos diferentes ações com um switch;
         -> Na aplicação, vamos consumir o estado atual do dado que está no reducer;
         
+    - ALTERANDO CONTEXTO COMPLEXO
+
+        -> Para alterar o contexto, vamos utilizar uma função chamada 'dispatch';
+        -> Ela estará no reducer também;
+        -> E deve conter todas as informações necessárias para a alteração do valor do contexto;
+        -> Ou seja, o switch entra em ação e retorna um novo contexto;
