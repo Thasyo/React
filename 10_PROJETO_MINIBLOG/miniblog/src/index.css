@@ -38,11 +38,11 @@ form{
 label{
   display: flex;
   flex-direction: column;
-  margin-bottom: 3px;
+  margin-bottom: 1em;
 }
 
 label span{
-  margin-bottom: .3em;
+  margin-bottom: .2em;
   font-weight: bold;
   text-align: left;
 }
