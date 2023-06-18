@@ -105,3 +105,11 @@ button[disabled]{
   border-radius: 3px;
 }
 
+.container .sucess{
+  color: #454444;
+  background-color: #8fe473;
+  border: 1px solid #4de570;
+  padding: 5px;
+  border-radius: 3px;
+}
+
