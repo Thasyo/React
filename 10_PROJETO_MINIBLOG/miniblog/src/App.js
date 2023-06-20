@@ -5,6 +5,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 //hooks
 import { useState, useEffect } from 'react';
 import { useAuthentication } from './hooks/useAuthentication';
+import { AuthProvider } from './context/AuthContext';
 
 //components
 import NavBar from './components/NavBar';
@@ -15,7 +16,8 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
-import { AuthProvider } from './context/AuthContext';
+import CreatePost from './pages/CreatePost/CreatePost';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 function App() {
 
@@ -46,6 +48,8 @@ function App() {
               <Route path='/about' element={<About/>}/>
               <Route path='/login' element={<Login/>}/>
               <Route path='/register' element={<Register/>}/>
+              <Route path='/posts/create' element={<CreatePost/>}/>
+              <Route path='/dashboard' element={<Dashboard/>}/>
             </Routes>
           </div>
         </BrowserRouter>
