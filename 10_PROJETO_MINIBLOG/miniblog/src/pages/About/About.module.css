@@ -1,0 +1,15 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h2{
+    font-size: 2em;
+}
+
+.about p{
+    color: #686666;
+    font-weight: 600;
+}
