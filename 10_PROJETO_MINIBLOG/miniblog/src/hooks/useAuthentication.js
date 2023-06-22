@@ -15,10 +15,10 @@ export const useAuthentication = () => {
     const [loading, setLoading] = useState();
     const [sucess, setSucess] = useState();
 
+    const auth = getAuth();
+
     //clearnup
     const [cancelled, setCancelled] = useState(false);
-
-    const auth = getAuth();
 
     const checkIfIsCancelled = () => {
 
@@ -63,7 +63,7 @@ export const useAuthentication = () => {
             }else if(error.message.includes("email-already")){
                 systemMessageError = "E-mail já cadastrado!";
             }else{
-                systemMessageError = "Ocorreu um error, tente novamente mais tarde!";
+                systemMessageError = "Ocorreu um erro, tente novamente mais tarde!";
             }
 
             setError(systemMessageError);
@@ -72,11 +72,41 @@ export const useAuthentication = () => {
         setLoading(false);
     }
 
+    //logout
     const logout = () => {
 
         checkIfIsCancelled();
 
         signOut(auth);
+    }
+
+    //login
+    const login = async (data) => {
+        checkIfIsCancelled();
+
+        setLoading(true);
+        setError(false);
+
+        try {
+
+            await signInWithEmailAndPassword(auth, data.email, data.password);
+            setLoading(false);
+
+        } catch (error) {
+
+            let systemMessageError;
+
+            if(error.message.includes("user-not-found")){
+                systemMessageError = "Usuário não existe";
+            }else if(error.message.includes("wrong-password")){
+                systemMessageError = "Senha incorreta.";
+            }else{
+                systemMessageError = "Ocorreu um erro, tente novamente mais tarde!";
+            }
+
+            setError(systemMessageError);
+            setLoading(false);
+        }
     }
 
 
@@ -91,6 +121,7 @@ export const useAuthentication = () => {
         loading,
         sucess,
         logout,
+        login
     }
 
 }
