@@ -17,7 +17,7 @@ export const useAuthentication = () => {
 
     const auth = getAuth();
 
-    //clearnup
+    //clearnup - evita sobrecarga e vazamento de memória.
     const [cancelled, setCancelled] = useState(false);
 
     const checkIfIsCancelled = () => {
