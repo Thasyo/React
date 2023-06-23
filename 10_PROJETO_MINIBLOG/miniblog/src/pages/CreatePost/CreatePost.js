@@ -47,7 +47,7 @@ const CreatePost = () => {
           <span>Tags</span>
           <input type="text" name='tags' required placeholder="Separe as tags por vírgula" onChange={(e) => setTags(e.target.value)} value={tags}/>
         </label>
-        <button className='btn'>Entrar</button>
+        <button className='btn'>Criar</button>
         {/* {!loading && <button className='btn'>Entrar</button>}
         {loading && <button className='btn' disabled>Aguarde...</button>}
         {error && <p className='error'>{error}</p>}
