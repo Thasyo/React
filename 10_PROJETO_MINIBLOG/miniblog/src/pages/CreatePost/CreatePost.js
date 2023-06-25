@@ -44,6 +44,7 @@ const CreatePost = () => {
       return;
     }
 
+    //inserindo post no bd.
     insertDocument({
       title,
       image,
