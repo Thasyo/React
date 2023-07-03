@@ -20,7 +20,7 @@ const Search = () => {
                 <>
                     <div className={styles.noposts}>
                         <p>Não foram encontrados posts a partir da sua busca...</p>
-                        <Link to="/home" className='btn btn-dark'>Voltar</Link>
+                        <Link to="/" className='btn btn-dark'>Voltar</Link>
                     </div>
                 </>
             )}
