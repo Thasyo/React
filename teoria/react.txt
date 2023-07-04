@@ -459,3 +459,19 @@ SEÇÃO 09 - CONTEXT API
         -> Ela estará no reducer também;
         -> E deve conter todas as informações necessárias para a alteração do valor do contexto;
         -> Ou seja, o switch entra em ação e retorna um novo contexto;
+
+-> SEÇÃO 11 - HOOKS
+
+    - USESTATE
+
+        -> O useState é um dos principais hooks do React;
+        -> O principal propósito é gerenciar valores;
+        -> Poderemos consultar um valor e alterar;
+        -> Isso nos permite re-renderizar um componente, o que não acontece com a manipulação de variáveis;
+
+    - USESTATE E INPUTS
+
+        -> Atrelando o useState a um input, podemos fazer algumas ações;
+        -> Alteração de um state por evento de onChange;
+        -> Limpeza de inputs (Controlled Input);
+        -> Após preenchimento total do form, unir os states e fazer um envio dos dados para o backend;
