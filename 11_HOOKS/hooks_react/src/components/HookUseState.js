@@ -39,6 +39,7 @@ const HookUseState = () => {
             <button>Enviar</button>
         </form>
         <p>Você tem {age} anos.</p>
+        <hr />
     </div>
   )
 }
