@@ -482,3 +482,28 @@ SEÇÃO 09 - CONTEXT API
         -> Porém, temos a possibilidade de executar uma função na hora da alteração do valor;
         -> Então, temos que o useReducer recebe o valor para gerenciar e uma para alterar este valor;
         
+    - USEEFFECT
+
+        -> É utilizado para várias opções no nosso App, junto com o useState é um dos hooks mais utilizados;
+        -> Podemos realizar desde alterações na DOM a requisições HTTP;
+        -> E o grande motivo é: conseguimos controlar quantas vezes acontece;
+        -> A sintaxe é formada por uma função a ser executada e um array de dependências;
+
+    - USEEFFECT COM ARRAY DE DEPENDÊNCIAS VAZIO
+
+        -> Uma estratégia interessante para algumas situações é utilizar o useEffect apenas uma vez;
+        -> Para isso, apenas precisamos deizar o array de dependências vazio;
+        -> Ao renderizar o componente a lógica será executada;
+
+    - ARRAY DE DEPENDÊNCIAS DO USEEFFECCT
+
+        -> Outra maneira de controlar quando o useEffect será executado, é colocando algum item no array de dependências;
+        -> Assim, sempre que o item for alterado, teremos o useEffect sendo executado novamente;
+        -> Nos fornecendo assim, um maior controlede quando a função deve ou não, ser executada;
+
+    - LIMPEZA DO USEEFFECT
+
+        -> Alguns efeitos, precisam ter uma técnica de cleanup (limpeza) para garantir o seu funcionamento;
+        -> Não fazer isso pode gerar erros ou componentes idesejados;
+        -> Exemplo: um timeout que ao mudar de página pode continuar a ser executado, pela falta de limpeza;
+    

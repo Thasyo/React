@@ -64,6 +64,8 @@ const HookUseReducer = () => {
                 <li key={task.id}>{task.text} <button onClick={() => removeTask(task.id)}>Deletar</button></li>
             ))}
         </div>
+
+        <hr />
     </div>
   )
 }
