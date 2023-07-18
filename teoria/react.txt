@@ -507,3 +507,9 @@ SEÇÃO 09 - CONTEXT API
         -> Não fazer isso pode gerar erros ou componentes idesejados;
         -> Exemplo: um timeout que ao mudar de página pode continuar a ser executado, pela falta de limpeza;
     
+    - USECONTEXT
+
+        -> É utilizado para consumir um contexto, da Context API;
+        -> Vamos criar o contexto e também o provider;
+        -> Envolver os componentes que receberão os valores compartilhados;
+        -> Após isso, fazer uso do hook onde necessário;
