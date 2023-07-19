@@ -513,3 +513,15 @@ SEÇÃO 09 - CONTEXT API
         -> Vamos criar o contexto e também o provider;
         -> Envolver os componentes que receberão os valores compartilhados;
         -> Após isso, fazer uso do hook onde necessário;
+
+    - USEREF
+
+        -> Pode ser utilizado como useState para gerenciar valores;
+        -> A diferença e que ele é um objeto, e seu valor está na propriedade current;
+        -> Outra particularidade do useRef é que ele não re-renderiza o componente ao ser alterado, sendo interessante em alguns casos;
+
+    - USEREF E O DOM
+
+        -> o useRef pode ser utilizado para selecionar elementos do JSX;
+        -> Com isso, podemos fazer manipulação de DOM ou aplicar funções como a focus, que foca no input;
+        
