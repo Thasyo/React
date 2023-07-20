@@ -525,3 +525,28 @@ SEÇÃO 09 - CONTEXT API
         -> o useRef pode ser utilizado para selecionar elementos do JSX;
         -> Com isso, podemos fazer manipulação de DOM ou aplicar funções como a focus, que foca no input;
         
+    - USECALLBACK
+
+        -> Pode ser utilizado para duas situações;
+        -> Ele basicamente memoriza uma função, fazendo ela não ser reconstruída a cada renderização de um componente;
+        -> O primeiro caso é quando estamos prezando pela perfomance, então queremos que uma função muito complexa não seja reconstruída toda vez;
+        -> Já o segundo caso, é quando o próprio react nos indica que uma função deveria estar contida em um useCallback, para evitar problemas de performance;
+    
+    - USEMEMO
+
+        -> Pode ser utilizado para garantir a referência de um objeto;
+        -> Fazendo com que algo possa ser atrelado a uma referência e não a um valor;
+        -> Com isso, conseguimos condicionar useEffects a uma variável de maneira mais inteligente;
+    
+    - USELAYOUTEFFECT
+
+        -> Muito parecido com o useEffect;
+        -> A grande diferença é que este hook roda antes de renderizar o componente;
+        -> Ou seja, o hook é síncrono, bloqueando o carregamento da página para o sucesso da sua funcionalidade;
+        -> A ideia é executar algo antes que o usuario veja a página;
+
+    - USEIMPERATIVEHANDLE
+
+        -> Temos como acionar ações em um outro componente de forma imperativa;
+        -> Como não podemos passar refs como props, precisamos usar uma função "fowardRef()";
+        -> Isso nos permite passar as referências, e torna o nosso exemplo viável;
