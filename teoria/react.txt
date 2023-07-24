@@ -563,3 +563,55 @@ SEÇÃO 09 - CONTEXT API
         -> Aconselhado para ser utilizado em custom hooks;
         -> adiciona uma área no React Dev Tools. Ela estará no componente em que o hook é utilizado;
     
+-> SEÇÃO 12 - APIs
+
+    - O QUE É UMA API?
+
+        -> é um acrônimo para Interface de Programação de Aplicações;
+        -> Uma forma simples de comunicação entre aplicações;
+        -> Não necessita de telas, respostas geralmente são em JSON;
+        -> Independente do front-end: a API não possui ligação com o front de uma aplicação;
+        -> Baseadas em requisições e respostas;
+        -> Podemos criar uma API com Express (framework do NodeJS); 
+
+    - O QUE É REST E RESTful?
+
+        -> REST significa Representational State Transfer ou Transferência Representacional de Estado;
+        -> Um estilo de arquitetura, que "define" como as APIs devem ser criadas;
+        -> Seguindo todos os padrões, a API é considerada RESTful;
+        -> Alguns pontos são: respostas uniformes, sem ligação de estado, cache de respostas e outros;
+        -> Ao longo do curso, focaremos em seguir estes padrões;
+        
+    - PRINCÍPIOS DE DESGIN REST
+
+        -> 1 - INTERFACE UNIFORME: Todas as solicitações de API para o mesmo recurso devem ter a mesma aparência, independentemente da origem da solicitação. A API REST deve garantir que o mesmo dado, como o nome ou endereço de e-mail de um usuário, pertença a apenas um identificador de recurso uniforme (URI).
+        -> 2 - DESACLOPAMENTO CLIENTE-SERVIDOR: No projeto da API REST, os aplicativos cliente e servidor devem ser completamente independentes um do outro. A única informação que o aplicativo cliente deve saber é o URI do recurso solicitado; ele não pode interagir com o aplicativo do servidor de nenhuma outra maneira. Da mesma forma, um aplicativo de servidor não deve modificar o aplicativo cliente, apenas transmiti-lo aos dados solicitados via HTTP.
+        -> 3 - APATRIDIA: As APIs REST são sem estado, o que significa que cada solicitação precisa incluir todas as informações necessárias para processá-la. Em outras palavras, as APIs REST não requerem nenhuma sessão do lado do servidor. Os aplicativos de servidor não têm permissão para armazenar nenhum dado relacionado a uma solicitação do cliente.
+        -> 4 - CAPACIDADE DE CACHE: Quando possível, os recursos devem ser armazenados em cache no lado do cliente ou do servidor. As respostas do servidor também precisam conter informações sobre se o armazenamento em cache é permitido para o recurso entregue. O objetivo é melhorar o desempenho do lado do cliente e aumentar a escalabilidade do lado do servidor.
+        -> 5 - ARQUITETURA DE SISTEMA EM CAMADAS: Nas APIs REST, as chamadas e respostas passam por diferentes camadas. Como regra geral, não assuma que os aplicativos cliente e servidor se conectam diretamente entre si. Pode haver vários intermediários diferentes no loop de comunicação. As APIs REST precisam ser projetadas para que nem o cliente nem o servidor saibam se ele se comunica com o aplicativo final ou com um intermediário.
+        -> 6 - CÓDIGO SOB DEMANDA (OPCIONAL): As APIs REST geralmente enviam recursos estáticos, mas, em certos casos, as respostas também podem conter código executável (como applets Java). Nesses casos, o código só deve ser executado sob demanda.
+    
+    - O QUE É UMA SPA?
+
+        -> Significa Single Page Application;
+        -> É quando a aplicação possui um front-end separado do back-end;
+        -> Ou seja, uma API para o back-end e um Framework para o front-end, como: React, Vue ou Angular;
+        -> Aplicações deste tipo, estão dominando o mercado;
+        -> E as sessões seguintes tem como objetivo trabalhar focadas em SPA;
+        -> A arquitetura anteriormente utilizada é conhecida como Monolith;
+    
+    - VERBOS HTTP
+
+        -> Os verbos htpp andam de mãos dadas com as APIs, e fazem parte do REST;
+        -> Temos métodos como:
+
+            - GET: Resgata, puxa, recebe dados;
+            - POST: Cria dados;
+            - PATCH: Atualiza Parcialmente ou Completamente os dados;
+            - PUT: Atualiza todos os dados;
+            - DELETE: Exclue, deleta dados;
+
+        -> Cada um dos métodos representa uma ação na API, ou seja, são essenciais;
+        -> É muito importante que as nossas funcionalidades usem os métodos corretos;
+        -> Enviamos o método através da requisição; 
+    
