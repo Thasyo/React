@@ -613,5 +613,32 @@ SEÇÃO 09 - CONTEXT API
 
         -> Cada um dos métodos representa uma ação na API, ou seja, são essenciais;
         -> É muito importante que as nossas funcionalidades usem os métodos corretos;
-        -> Enviamos o método através da requisição; 
+        -> Enviamos o método através da requisição;
+
+    - CRIANDO UMA API COM EXPRESS
+
+        -> Para criar a API, teremos uma tarefa bem simples, comparada a estrutura com Handlebars;
+        -> Basta instalar o Express, e ele fará tudo sozinho neste ponto;
+        -> Depois criaremos uma rota que responde em JSON, este é o dado de comunicação entre a aplicação e API;
+        -> É importante definir o verbo correto, como GET ou POST, por ex;
+    
+    - CONHECENDO O POSTMAN
+
+        -> É um client para testes de API;
+        -> Podemos então criar o backend antes ou separado do front, só com a ajuda deste software;
+        -> Como você deve imaginar, é fundamental quando estamos criando APIs;
+        -> Podemos simular verbos, corpos de requisição, inserir headers, tudo que é possível com uma aplicação web;
+
+    - TESTANDO ROTA COM POSTMAN
+
+        -> Para acessar uma rota com o Postman, precisamos configurar com o client;
+        -> Devemos inserir o verbo correto para a rota;
+        -> E também configurar o endpoint, que é a URL onde nossa rota foi estabelecida;
+        -> Enviando a requisição, receberemos a resposta;
+     
+    - CRIANDO UMA ROTA DE POST
+
+        -> Para criar a rota de POST, vamos utilizar o método POST do Express;
+        -> Podemos extrair os dados da requisição, acessando req.body;
+        -> Da mesma maneira que np get, podemos retornar uma resposta como JSON pela API;
     
