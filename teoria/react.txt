@@ -642,3 +642,27 @@ SEÇÃO 09 - CONTEXT API
         -> Podemos extrair os dados da requisição, acessando req.body;
         -> Da mesma maneira que np get, podemos retornar uma resposta como JSON pela API;
     
+    - ADICIONANDO STATUS NA RESPOSTA
+
+        -> Os status podem ajudar no desenvolvimento da nossa aplicação;
+        -> Exibindo mensagens de sucesso ou erro, por exemplo;
+        -> Precisamos entre res e o método json definir um número de status HTTP;
+        -> Isso é feito por meio do método status;
+
+    - Códigos de Status HTTP. (As respostas são agrupadas em 5 classes)
+
+        -> Respostas de informação (100-199)
+        -> Respostas de sucesso (200-299)
+        -> Redirecionamentos (300-399)
+        -> Erros do cliente (400-499)
+        -> Erros do servidor (500-599)
+
+        -> Para mais informações: https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
+
+    - A REALIDADE SOBRE AS APIs
+
+        -> A API é desenvolvida de forma muito semelhante a quando criamos projetos com Handlebars, por exemplo;
+        -> Temos algumas alterações leves, como: resposta apenas por JSON;
+        -> Mas isso acaba até simplificando as coisas, separando as responsabilidades;
+        -> Ou seja, reaproveitamos todo o conhecimento visto durante o curso;
+    
